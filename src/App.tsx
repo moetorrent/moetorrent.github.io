@@ -1,3 +1,3 @@
 export default function App() {
-  return "moeTorrent";
+  return <h1>moeTorrent</h1>;
 }
