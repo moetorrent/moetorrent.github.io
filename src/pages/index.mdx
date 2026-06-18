@@ -1,0 +1,49 @@
+---
+layout: ../layouts/main-layout.astro
+---
+
+### About moeTorrent
+
+<div class="flex flex-col md:flex-row gap-6 items-start">
+  <div class="flex-shrink-0 mx-auto">
+    <img src="/logo-square.png" alt="moeTorrent logo" class="w-30 h-30 rounded-lg mt-3 mb-0" />
+  </div>
+  <div class="flex-1 [&>:first-child]:mt-3">
+    moeTorrent is a bittorrent client programmed in [TypeScript](https://www.typescriptlang.org/) / [React](https://react.dev/) / [Tauri](https://v2.tauri.app/) that uses
+    a bundled [transmission-daemon](https://transmissionbt.com).
+
+    It aims to be a modern alternative to other bittorrent clients out there.
+    moeTorrent focuses heavily on clean UX, aesthetic design, and simplicity,
+    making torrenting approachable without overwhelming the user with advanced
+    technical configurations.
+
+  </div>
+</div>
+
+### Features & Roadmap
+
+#### Currently Implemented:
+
+- Polished and cute user interface
+- No ads and 100% open-source
+- Native multi-window desktop application (via Tauri)
+- Bundled, auto-starting Transmission daemon
+- Magnet URI and `.torrent` file parsing
+  - Displays creation date, size, and Info Hashes (v1 and v2)
+  - Checks target drive free disk space
+- Interactive file browser inside torrent add window
+  - Collapsible file/directory tree view
+  - Real-time size calculation of selected files
+- Torrent management and queue operations (start, pause, stop, delete)
+- Real-time transfer statistics and diagnostics
+  - Global upload and download speed meters
+  - Active seed/peer counts and ETA per torrent
+
+#### Planned:
+
+- Support for selective file downloads
+- Advanced configurations (speed limits, ports, default download path)
+- Customizable themes and mascot artwork options
+- Expanded diagnostics (peer clients, tracker list, speed graphs)
+- Desktop integration (system tray, background running, completion notifications)
+- Sequential downloading support (for media streaming)

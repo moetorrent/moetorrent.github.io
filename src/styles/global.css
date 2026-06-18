@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "@fontsource/bagel-fat-one";
+@import "@fontsource-variable/inter/wght.css";
+
+@theme {
+  --font-sans: "Inter Variable", sans-serif;
+
+  --color-background: #5865f2;
+  --color-foreground: #fcfcfc;
+  --color-dark: #18181b;
+}
