@@ -2,6 +2,8 @@
 layout: ../layouts/main-layout.astro
 ---
 
+import { APP_VERSION, DOWNLOAD_URLS } from "../config";
+
 ### About moeTorrent
 
 <div class="flex flex-col md:flex-row gap-6 items-start">
@@ -18,6 +20,24 @@ layout: ../layouts/main-layout.astro
     technical configurations.
 
   </div>
+</div>
+
+<div class="not-prose my-8 -mx-5 px-5 py-3 border-y border-dashed border-dark/15 flex flex-col sm:flex-row items-center justify-center gap-3">
+  <div class="text-center leading-tight text-right">
+    <div class="text-sm font-semibold text-dark">Version {APP_VERSION}</div>
+    <div class="text-xs text-dark/60 mt-0.5">
+      Compatible with Windows 10 / 11 (64-bit)
+    </div>
+  </div>
+  <a
+    href={DOWNLOAD_URLS.windowsNsis}
+    class="inline-flex items-center gap-2 px-5 py-2.5 bg-background text-foreground font-medium rounded-md"
+  >
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+      <path d="M0 3.449L9.75 2.1v9.451H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.101zM10.95 1.95L24 0v11.55H10.95V1.95zM10.95 12.45H24v11.55l-13.05-1.95v-9.6z" />
+    </svg>
+    <span>Download for Windows</span>
+  </a>
 </div>
 
 ### Features & Roadmap

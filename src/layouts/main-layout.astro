@@ -1,6 +1,7 @@
 ---
 import HeaderLinks from "../components/header-links.astro";
 import "../styles/global.css";
+import { APP_VERSION } from "../config";
 ---
 
 <html lang="en">
@@ -16,7 +17,7 @@ import "../styles/global.css";
     <div
       class="mx-auto select-none w-fit font-bold text-xs mt-10 font-mono bg-background/90 px-2 py-1 rounded-lg border border-foreground/10"
     >
-      LATEST: v0.1.1
+      LATEST: v{APP_VERSION}
     </div>
     <h1 class="font-[Bagel_Fat_One] text-6xl mx-auto w-fit my-2 select-none">
       moeTorrent
